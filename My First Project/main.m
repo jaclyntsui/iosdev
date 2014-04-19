@@ -12,9 +12,9 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
+        int num = 400;
         // insert code here...
-        NSLog(@"testing bada bing bada boom!");
+        NSLog(@"num equals %i", num);
         
     }
     return 0;
