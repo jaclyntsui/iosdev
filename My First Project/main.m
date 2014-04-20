@@ -15,11 +15,17 @@ int main(int argc, const char * argv[])
         int answer = 0;
         int guess = 0;
         int turn = 0;
-        
+
+        answer = arc4random() % 100 + 1;
         //divide randomly generated numbers by 100 gives you 0-99. plus 1 for 1-100
 //        answer = arc4random() % 100 + 1;
-        NSLog(@"Enter a number between 1 and 100");
-        scanf("%i", &guess);
+      
+        while (guess != answer) {
+            turn++;
+            
+            NSLog(@"Enter a number between 1 and 100");
+            scanf("%i", &guess);
+            
         if (guess > answer) {
             NSLog(@"Lower!");
         }
@@ -29,7 +35,8 @@ int main(int argc, const char * argv[])
         else{
             NSLog(@"Correct!");
         }
+    }//end while loop
+        NSLog(@"It took you %i tries", turn);
     }
     return 0;
 }
-
