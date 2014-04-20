@@ -30,9 +30,12 @@ int main(int argc, const char * argv[])
         scanf("%s", cstring);
         
         //Create an NSString object from the list of characters that were read in
+        //The asterisk(*) turns object into a pointer which stores the memory location of an object
+        
+        //Objects take up a lot of memory, it's better to just store the reference of an object.
         NSString *inputString = [NSString stringWithCString:cstring encoding:1];
         
-        NSLog(@"You entered the word '%@'", inputString);
+        NSLog(@"You entered the word '%@' and is it %li characters long", inputString, [inputString length]);
         
         
     }
