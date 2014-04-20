@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBE34BBB19037DB700FD796A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE34BBA19037DB700FD796A /* Foundation.framework */; };
+		DBE34BBE19037DB700FD796A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE34BBD19037DB700FD796A /* main.m */; };
+		DBE34BC219037DB700FD796A /* PeopleDatabase.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBE34BC119037DB700FD796A /* PeopleDatabase.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBE34BB519037DB700FD796A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DBE34BC219037DB700FD796A /* PeopleDatabase.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DBE34BB719037DB700FD796A /* PeopleDatabase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PeopleDatabase; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE34BBA19037DB700FD796A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBE34BBD19037DB700FD796A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBE34BC019037DB700FD796A /* PeopleDatabase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeopleDatabase-Prefix.pch"; sourceTree = "<group>"; };
+		DBE34BC119037DB700FD796A /* PeopleDatabase.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PeopleDatabase.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBE34BB419037DB700FD796A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE34BBB19037DB700FD796A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBE34BAE19037DB700FD796A = {
+			isa = PBXGroup;
+			children = (
+				DBE34BBC19037DB700FD796A /* PeopleDatabase */,
+				DBE34BB919037DB700FD796A /* Frameworks */,
+				DBE34BB819037DB700FD796A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBE34BB819037DB700FD796A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBE34BB719037DB700FD796A /* PeopleDatabase */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBE34BB919037DB700FD796A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE34BBA19037DB700FD796A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBE34BBC19037DB700FD796A /* PeopleDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				DBE34BBD19037DB700FD796A /* main.m */,
+				DBE34BC119037DB700FD796A /* PeopleDatabase.1 */,
+				DBE34BBF19037DB700FD796A /* Supporting Files */,
+			);
+			path = PeopleDatabase;
+			sourceTree = "<group>";
+		};
+		DBE34BBF19037DB700FD796A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBE34BC019037DB700FD796A /* PeopleDatabase-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBE34BB619037DB700FD796A /* PeopleDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBE34BC519037DB700FD796A /* Build configuration list for PBXNativeTarget "PeopleDatabase" */;
+			buildPhases = (
+				DBE34BB319037DB700FD796A /* Sources */,
+				DBE34BB419037DB700FD796A /* Frameworks */,
+				DBE34BB519037DB700FD796A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeopleDatabase;
+			productName = PeopleDatabase;
+			productReference = DBE34BB719037DB700FD796A /* PeopleDatabase */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBE34BAF19037DB700FD796A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = DBE34BB219037DB700FD796A /* Build configuration list for PBXProject "PeopleDatabase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBE34BAE19037DB700FD796A;
+			productRefGroup = DBE34BB819037DB700FD796A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBE34BB619037DB700FD796A /* PeopleDatabase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBE34BB319037DB700FD796A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE34BBE19037DB700FD796A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DBE34BC319037DB700FD796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DBE34BC419037DB700FD796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DBE34BC619037DB700FD796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeopleDatabase/PeopleDatabase-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBE34BC719037DB700FD796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeopleDatabase/PeopleDatabase-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBE34BB219037DB700FD796A /* Build configuration list for PBXProject "PeopleDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE34BC319037DB700FD796A /* Debug */,
+				DBE34BC419037DB700FD796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBE34BC519037DB700FD796A /* Build configuration list for PBXNativeTarget "PeopleDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE34BC619037DB700FD796A /* Debug */,
+				DBE34BC719037DB700FD796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBE34BAF19037DB700FD796A /* Project object */;
+}

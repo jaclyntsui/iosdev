@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F82A22D-AB0A-46A2-A857-7A3444A00788</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PeopleDatabase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F2BC2087-EFD7-41AA-BF9C-A0A2DC651D31</key>
+		<string>ssh://github.com/jaclyntsui/iosdev.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PeopleDatabase/PeopleDatabase.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F2BC2087-EFD7-41AA-BF9C-A0A2DC651D31</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jaclyntsui/iosdev.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F2BC2087-EFD7-41AA-BF9C-A0A2DC651D31</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2BC2087-EFD7-41AA-BF9C-A0A2DC651D31</string>
+			<key>IDESourceControlWCCName</key>
+			<string>My First Project</string>
+		</dict>
+	</array>
+</dict>
+</plist>
