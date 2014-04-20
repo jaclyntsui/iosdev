@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBD3506219044C0700DEE820 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3506119044C0700DEE820 /* Person.m */; };
 		DBE34BBB19037DB700FD796A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE34BBA19037DB700FD796A /* Foundation.framework */; };
 		DBE34BBE19037DB700FD796A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE34BBD19037DB700FD796A /* main.m */; };
 		DBE34BC219037DB700FD796A /* PeopleDatabase.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBE34BC119037DB700FD796A /* PeopleDatabase.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DBD3506019044C0700DEE820 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DBD3506119044C0700DEE820 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DBE34BB719037DB700FD796A /* PeopleDatabase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PeopleDatabase; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE34BBA19037DB700FD796A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBE34BBD19037DB700FD796A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				DBE34BBD19037DB700FD796A /* main.m */,
+				DBD3506019044C0700DEE820 /* Person.h */,
+				DBD3506119044C0700DEE820 /* Person.m */,
 				DBE34BC119037DB700FD796A /* PeopleDatabase.1 */,
 				DBE34BBF19037DB700FD796A /* Supporting Files */,
 			);
@@ -138,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD3506219044C0700DEE820 /* Person.m in Sources */,
 				DBE34BBE19037DB700FD796A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +258,7 @@
 				DBE34BC719037DB700FD796A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
