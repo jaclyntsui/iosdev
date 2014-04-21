@@ -15,8 +15,21 @@
 @interface ViewController : UIViewController {
     IBOutlet UILabel *scoreLabel;
     IBOutlet UILabel *timerLabel;
+    
+    //Hold number of button taps
+    NSInteger count;
+    
+    //Hold number of seconds remaining
+    NSInteger seconds;
+    
+    NSTimer *timer;
 }
 
-- (IBAction)buttonPressed;
+- (IBAction)buttonPressed{
+    count++;
+    
+    //%i is the placeholder for an integer = variable count
+    scoreLabel.text[NSString stringWithFormat:@"Score\n%i", count];
+}
 
 @end
