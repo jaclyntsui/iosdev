@@ -25,6 +25,7 @@
 		DBCDE4FA1906D19D005358CE /* field_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCDE4E81906D19D005358CE /* field_time@2x.png */; };
 		DBCDE4FB1906D19D005358CE /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBCDE4E91906D19D005358CE /* HallOfTheMountainKing.mp3 */; };
 		DBCDE4FC1906D19D005358CE /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = DBCDE4EA1906D19D005358CE /* SecondBeep.wav */; };
+		DBCDE4FE190708DD005358CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCDE4FD190708DD005358CE /* AVFoundation.framework */; };
 		DBD042391904BC1400EDABC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD042381904BC1400EDABC7 /* Foundation.framework */; };
 		DBD0423B1904BC1400EDABC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD0423A1904BC1400EDABC7 /* CoreGraphics.framework */; };
 		DBD0423D1904BC1400EDABC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD0423C1904BC1400EDABC7 /* UIKit.framework */; };
@@ -70,6 +71,7 @@
 		DBCDE4E81906D19D005358CE /* field_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "field_time@2x.png"; sourceTree = "<group>"; };
 		DBCDE4E91906D19D005358CE /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
 		DBCDE4EA1906D19D005358CE /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SecondBeep.wav; sourceTree = "<group>"; };
+		DBCDE4FD190708DD005358CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DBD042351904BC1400EDABC7 /* Tappity_tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tappity_tap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD042381904BC1400EDABC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBD0423A1904BC1400EDABC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCDE4FE190708DD005358CE /* AVFoundation.framework in Frameworks */,
 				DBD0423B1904BC1400EDABC7 /* CoreGraphics.framework in Frameworks */,
 				DBD0423D1904BC1400EDABC7 /* UIKit.framework in Frameworks */,
 				DBD042391904BC1400EDABC7 /* Foundation.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		DBD042371904BC1400EDABC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBCDE4FD190708DD005358CE /* AVFoundation.framework */,
 				DBD042381904BC1400EDABC7 /* Foundation.framework */,
 				DBD0423A1904BC1400EDABC7 /* CoreGraphics.framework */,
 				DBD0423C1904BC1400EDABC7 /* UIKit.framework */,

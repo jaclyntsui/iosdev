@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 //Header files are used to declare different parts of the program (doesn't give the actual implementation details)
 
@@ -23,6 +24,11 @@
     NSInteger seconds;
     
     NSTimer *timer;
+    
+    //AVAudioPlayer instance variables
+    AVAudioPlayer *buttonBeep;
+    AVAudioPlayer *secondBeep;
+    AVAudioPlayer *backgroundMusic;
 }
 
 - (IBAction) buttonPressed;
