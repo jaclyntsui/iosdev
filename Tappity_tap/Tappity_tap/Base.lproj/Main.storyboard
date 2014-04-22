@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPresse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H6V-dE-xM3"/>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o8I-XT-0Ug"/>
+                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jcV-9G-H1K"/>
                                 </connections>
                             </button>
                         </subviews>

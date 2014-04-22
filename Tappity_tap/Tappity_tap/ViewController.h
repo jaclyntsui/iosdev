@@ -25,11 +25,8 @@
     NSTimer *timer;
 }
 
-- (IBAction)buttonPressed{
-    count++;
-    
-    //%i is the placeholder for an integer = variable count
-    scoreLabel.text[NSString stringWithFormat:@"Score\n%i", count];
-}
+- (IBAction) buttonPressed;
+- (void)setupGame;
+- (void)subtractTime;
 
 @end

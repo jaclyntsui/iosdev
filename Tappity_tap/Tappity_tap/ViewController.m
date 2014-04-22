@@ -18,6 +18,10 @@
 {
     //iOS will call viewDidLoad automatically for you when the storyboard and view are loaded
     [super viewDidLoad];
+    
+    
+    //Call method will start things off.
+    [self setupGame];
 
 }
 
@@ -26,6 +30,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)buttonPressed {
+    count++;
+    
+    scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+}
+
 
 - (void)setupGame {
     //1
@@ -52,11 +63,14 @@
     //When timer hits 0, timer will stop and end the game
     if(seconds == 0){
         [timer invalidate];
+        
+    //Alert for end-of-game scenario
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Time is up!" message: [NSString stringWithFormat:@"You scored %i points", count]delegate:self cancelButtonTitle:@"Play Again" otherButtonTitles:nil];
+        
+        [alert show];
     }
 }
 
-- (IBAction)buttonPressed {
-    scoreLabel.text = @"Pressed!";
-}
+
 
 @end
