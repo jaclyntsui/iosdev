@@ -66,6 +66,9 @@
     count++;
     
     scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+    
+    //Play when button is pressed
+    [buttonBeep play];
 }
 
 
@@ -84,12 +87,19 @@
              selector:@selector(subtractTime)
              userInfo:nil
                                             repeats:YES];
+    
+    //Initiate background music while playing
+    [backgroundMusic setVolume:0.3];
+    [backgroundMusic play];
 }
 
 - (void)subtractTime {
     //Decreasing the number of seconds and updating label on screen with new time.
     seconds--;
     timerLabel.text = [NSString stringWithFormat:@"Time: %i", seconds];
+    
+    //Sound played every second counting down
+    [secondBeep play];
     
     //When timer hits 0, timer will stop and end the game
     if(seconds == 0){
