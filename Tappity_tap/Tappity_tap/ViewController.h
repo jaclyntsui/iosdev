@@ -12,7 +12,7 @@
 
 //Outlet instance variables below refers to the 2 labels created in Main.storyboard
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController<UIAlertViewDelegate> {
     IBOutlet UILabel *scoreLabel;
     IBOutlet UILabel *timerLabel;
     
