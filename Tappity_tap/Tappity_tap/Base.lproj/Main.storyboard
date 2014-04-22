@@ -23,20 +23,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="155" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-yq-Erw">
-                                <rect key="frame" x="83" y="323" width="155" height="86"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="146" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-yq-Erw">
+                                <rect key="frame" x="87" y="374" width="146" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVz-aV-KG6">
-                                <rect key="frame" x="119" y="209" width="82" height="53"/>
+                                <rect key="frame" x="46" y="126" width="228" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tap me!">
+                                <state key="normal" backgroundImage="button_tap_deselected.png">
                                     <color key="titleColor" red="1" green="0.95791849520348271" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="button_tap_selected.png"/>
                                 <connections>
                                     <action selector="buttonPresse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H6V-dE-xM3"/>
                                     <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jcV-9G-H1K"/>
@@ -55,6 +56,10 @@
             <point key="canvasLocation" x="63" y="-11"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_tap_deselected.png" width="250" height="265"/>
+        <image name="button_tap_selected.png" width="250" height="265"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
