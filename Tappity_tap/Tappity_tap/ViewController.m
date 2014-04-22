@@ -20,6 +20,8 @@
     [super viewDidLoad];
     
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_tile.png"]];
+    
     //Call method will start things off.
     [self setupGame];
 
