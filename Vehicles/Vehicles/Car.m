@@ -45,5 +45,48 @@
     return @"Beep beep!";
 }
 
+- (NSString *)vehicleDetailsString
+{
+    //Get basic details from superclass
+    NSString *basicDetails = [super vehicleDetailsString];
+    
+    //Initialize mutable string
+    NSMutableString *carDetailsBuilder = [NSMutableString string];
+    [carDetailsBuilder appendString:@"\n\nCar-Specific Details:\n\n"];
+    
+    //String helpers for booleans
+    NSString *yes = @"Yes\n";
+    NSString *no = @"No\n";
+    
+    //Add info about car-specific features.
+    [carDetailsBuilder appendString:@"Has sunroof: "];
+    if (self.hasSunroof) {
+        [carDetailsBuilder appendString:yes];
+    } else {
+        [carDetailsBuilder appendString:no];
+    }
+    
+    [carDetailsBuilder appendString:@"Is Hatchback: "];
+    if (self.isHatchback) {
+        [carDetailsBuilder appendString:yes];
+    } else {
+        [carDetailsBuilder appendString:no];
+    }
+    
+    [carDetailsBuilder appendString:@"Is Convertible: "];
+    if (self.isConvertible) {
+        [carDetailsBuilder appendString:yes];
+    } else {
+        [carDetailsBuilder appendString:no];
+    }
+    
+    [carDetailsBuilder appendFormat:@"Number of doors: %d", self.numberOfDoors];
+    
+    //Create the final string by combining basic and car-specific details.
+    NSString *carDetails = [basicDetails stringByAppendingString:carDetailsBuilder];
+    
+    return carDetails;
+}
+
 
 @end
