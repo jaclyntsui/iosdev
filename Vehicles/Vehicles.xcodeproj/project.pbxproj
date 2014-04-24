@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB1164B419088E1700463D19 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1164B319088E1700463D19 /* Car.m */; };
+		DB963EE31909DA9F0001E309 /* Motorcycle.m in Sources */ = {isa = PBXBuildFile; fileRef = DB963EE21909DA9F0001E309 /* Motorcycle.m */; };
 		F5961A2217DD013A008D39EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2117DD013A008D39EA /* Foundation.framework */; };
 		F5961A2417DD013A008D39EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2317DD013A008D39EA /* CoreGraphics.framework */; };
 		F5961A2617DD013A008D39EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2517DD013A008D39EA /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		DB1164B219088E1700463D19 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		DB1164B319088E1700463D19 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		DB963EE11909DA9F0001E309 /* Motorcycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motorcycle.h; sourceTree = "<group>"; };
+		DB963EE21909DA9F0001E309 /* Motorcycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motorcycle.m; sourceTree = "<group>"; };
 		F5961A1E17DD013A008D39EA /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5961A2117DD013A008D39EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5961A2317DD013A008D39EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 				F5961A3717DD013A008D39EA /* VehicleListTableViewController.m */,
 				F5961A3917DD013A008D39EA /* VehicleDetailViewController.h */,
 				F5961A3A17DD013A008D39EA /* VehicleDetailViewController.m */,
+				DB963EE11909DA9F0001E309 /* Motorcycle.h */,
+				DB963EE21909DA9F0001E309 /* Motorcycle.m */,
 				F5961A3C17DD013A008D39EA /* Images.xcassets */,
 				F5961A2817DD013A008D39EA /* Supporting Files */,
 			);
@@ -270,6 +275,7 @@
 				F5961A2E17DD013A008D39EA /* main.m in Sources */,
 				F5961A3B17DD013A008D39EA /* VehicleDetailViewController.m in Sources */,
 				F5961A5B17DD04AF008D39EA /* Vehicle.m in Sources */,
+				DB963EE31909DA9F0001E309 /* Motorcycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
