@@ -31,4 +31,7 @@
 //Convenience method for UITableViewCells and UINavigatorBar titles
 -(NSString *)vehicleTitleString;
 
+//Method to get Vehicle details
+-(NSString *)vehicleDetailsString;
+
 @end
