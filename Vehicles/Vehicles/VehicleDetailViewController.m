@@ -55,7 +55,20 @@
 {
     // Update the user interface for the detail item.
     if (self.detailVehicle) {
-        //TODO: Fill this in.
+        
+        //Set the View Controller title, which will display in the Navigation bar
+        self.title = [self.detailVehicle vehicleTitleString];
+        
+        //Setup the basic details string based on the properties in the base Vehicle car
+        NSMutableString *basicDetailsString = [NSMutableString string];
+        [basicDetailsString appendFormat:@"Basic vehicle details:\n\n"];
+        [basicDetailsString appendFormat:@"Brand name: %@\n", self.detailVehicle.brandName];
+        [basicDetailsString appendFormat:@"Model name: %@\n", self.detailVehicle.modelName];
+        [basicDetailsString appendFormat:@"Model year: %d\n", self.detailVehicle.modelYear];
+        [basicDetailsString appendFormat:@"Power source: %@\n", self.detailVehicle.powerSource];
+        [basicDetailsString appendFormat:@"# of wheels: %d\n", self.detailVehicle.numberOfWheels];
+        
+        self.vehicleDetailsLabel.text = basicDetailsString;
     }
 }
 
