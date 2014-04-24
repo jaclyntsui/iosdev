@@ -28,4 +28,7 @@
 -(NSString *)turn:(NSInteger)degrees;
 -(NSString *)makeNoise;
 
+//Convenience method for UITableViewCells and UINavigatorBar titles
+-(NSString *)vehicleTitleString;
+
 @end

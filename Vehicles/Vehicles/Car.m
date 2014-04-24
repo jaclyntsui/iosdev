@@ -22,7 +22,7 @@
 
 - (NSString *)start
 {
-    return [NSString stringWithFormat:@"Start power source %@.", self.powerSource]
+    return [NSString stringWithFormat:@"Start power source %@.", self.powerSource];
 }
 
 - (NSString *)goForward
