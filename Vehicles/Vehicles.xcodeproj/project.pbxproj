@@ -10,6 +10,7 @@
 		DB1164B419088E1700463D19 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1164B319088E1700463D19 /* Car.m */; };
 		DB963EE31909DA9F0001E309 /* Motorcycle.m in Sources */ = {isa = PBXBuildFile; fileRef = DB963EE21909DA9F0001E309 /* Motorcycle.m */; };
 		DB963EE61909E8E50001E309 /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = DB963EE51909E8E50001E309 /* Truck.m */; };
+		DB963EE9190A06B00001E309 /* UIAlertView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = DB963EE8190A06B00001E309 /* UIAlertView+Convenience.m */; };
 		F5961A2217DD013A008D39EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2117DD013A008D39EA /* Foundation.framework */; };
 		F5961A2417DD013A008D39EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2317DD013A008D39EA /* CoreGraphics.framework */; };
 		F5961A2617DD013A008D39EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5961A2517DD013A008D39EA /* UIKit.framework */; };
@@ -45,6 +46,8 @@
 		DB963EE21909DA9F0001E309 /* Motorcycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Motorcycle.m; sourceTree = "<group>"; };
 		DB963EE41909E8E50001E309 /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Truck.h; sourceTree = "<group>"; };
 		DB963EE51909E8E50001E309 /* Truck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Truck.m; sourceTree = "<group>"; };
+		DB963EE7190A06B00001E309 /* UIAlertView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Convenience.h"; sourceTree = "<group>"; };
+		DB963EE8190A06B00001E309 /* UIAlertView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Convenience.m"; sourceTree = "<group>"; };
 		F5961A1E17DD013A008D39EA /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5961A2117DD013A008D39EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5961A2317DD013A008D39EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				DB963EE51909E8E50001E309 /* Truck.m */,
 				F5961A3C17DD013A008D39EA /* Images.xcassets */,
 				F5961A2817DD013A008D39EA /* Supporting Files */,
+				DB963EE7190A06B00001E309 /* UIAlertView+Convenience.h */,
+				DB963EE8190A06B00001E309 /* UIAlertView+Convenience.m */,
 			);
 			path = Vehicles;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				F5961A3817DD013A008D39EA /* VehicleListTableViewController.m in Sources */,
 				DB963EE61909E8E50001E309 /* Truck.m in Sources */,
 				F5961A2E17DD013A008D39EA /* main.m in Sources */,
+				DB963EE9190A06B00001E309 /* UIAlertView+Convenience.m in Sources */,
 				F5961A3B17DD013A008D39EA /* VehicleDetailViewController.m in Sources */,
 				F5961A5B17DD04AF008D39EA /* Vehicle.m in Sources */,
 				DB963EE31909DA9F0001E309 /* Motorcycle.m in Sources */,
