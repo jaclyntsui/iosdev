@@ -50,4 +50,22 @@
     }
 }
 
+- (NSString *)vehicleDetailsString
+{
+    //Get basic details from superclass
+    NSString *basicDetails = [super vehicleDetailsString];
+    
+    //Initialize mutable string
+    NSMutableString *truckDetailsBuilder = [NSMutableString string];
+    [truckDetailsBuilder appendString:@"\n\nTruck-Specific Details:\n\n"];
+    
+    //Add info about truck-specific features
+    [truckDetailsBuilder appendFormat:@"Cargo capacity: %d cubic feet", self.cargoCapacityCubicFeet];
+    
+    //Create the final string by combining basic and truck-specific details
+    NSString *truckDetails = [basicDetails stringByAppendingString:truckDetailsBuilder];
+    
+    return truckDetails;
+}
+
 @end
