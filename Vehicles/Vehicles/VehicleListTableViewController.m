@@ -10,6 +10,7 @@
 
 #import "VehicleDetailViewController.h"
 #import "Vehicle.h"
+#import "VehicleList.h"
 
 
 @interface VehicleListTableViewController ()
