@@ -10,14 +10,20 @@
 
 @implementation Car
 
--(id)init
+#pragma mark - Factory Method
++(Car *)carWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource numberOfDoors:(NSInteger)numberOfDoors convertible:(BOOL)isConvertible hatchback:(BOOL)isHatchback sunroof:(BOOL)hasSunroof
 {
-    if (self = [super init]){
-        //Since all cars have 4 wheels, we can safely set this for every initialized instanceof a car
-        //Inherited public properties from parent class = Vehicle
-        self.numberOfWheels = 4;
-    }
-    return self;
+    //Create the car object using the superclass factory method.
+    Car *newCar = [Car vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:powerSource wheels:4];
+    
+    //Set the car-specific properties using the passed-in variables.
+    newCar.numberOfDoors = numberOfDoors;
+    newCar.isConvertible = isConvertible;
+    newCar.isHatchback = isHatchback;
+    newCar.hasSunroof = hasSunroof;
+    
+    //Return the fully instantiated Car object.
+    return newCar;
 }
 
 - (NSString *)start
@@ -87,6 +93,7 @@
     
     return carDetails;
 }
+
 
 
 @end

@@ -10,15 +10,17 @@
 
 @implementation Motorcycle
 
-#pragma mark - Initialization
-
--(id) init
+#pragma mark - Factory Method
++(Motorcycle *)motorcycleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise
 {
-    if(self = [super init]){
-        self.numberOfWheels = 2;
-        self.powerSource = @"gas engine";
-    }
-    return self;
+    //Create a new instance of the motorcycle with the basic properties by calling the Factory
+    //method on the superclass.
+    Motorcycle *newMotorcycle = [Motorcycle vehicleWithBrandName:brandName modelName:modelName modelYear:modelYear powerSource:@"gas engine" wheels:2];
+    
+    //Set the Motorcycle-specific properties.
+    newMotorcycle.engineNoise = engineNoise;
+    
+    return newMotorcycle;
 }
 
 #pragma mark - Superclass overrides

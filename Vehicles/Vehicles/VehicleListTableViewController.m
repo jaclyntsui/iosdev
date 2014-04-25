@@ -24,89 +24,50 @@
 -(void)setupVehicleArray
 {
     //Create a car.
-    Car *mustang = [[Car alloc] init];
-    mustang.brandName = @"Ford";
-    mustang.modelName = @"Mustang";
-    mustang.modelYear = 1968;
-    mustang.isConvertible = YES;
-    mustang.isHatchback = NO;
-    mustang.hasSunroof = NO;
-    mustang.numberOfDoors = 2;
-    mustang.powerSource = @"gas engine";
+    Car *mustang = [Car carWithBrandName:@"Ford" modelName:@"Mustang" modelYear:1968
+                             powerSource:@"gas engine" numberOfDoors:2 convertible:YES hatchback:NO sunroof:NO];
     
     //Add it to the array
     [self.vehicles addObject:mustang];
     
     //Create another car.
-    Car *outback = [[Car alloc] init];
-    outback.brandName = @"Subaru";
-    outback.modelName = @"Outback";
-    outback.modelYear = 1999;
-    outback.isConvertible = NO;
-    outback.isHatchback = YES;
-    outback.hasSunroof = NO;
-    outback.numberOfDoors = 5;
-    outback.powerSource = @"gas engine";
+    Car *outback = [Car carWithBrandName:@"Subaru" modelName:@"Outback" modelYear:1999
+                             powerSource:@"gas engine" numberOfDoors:5 convertible:NO hatchback:YES sunroof:NO];
     
     //Add it to the array.
     [self.vehicles addObject:outback];
     
     //Create another car
-    Car *prius = [[Car alloc] init];
-    prius.brandName = @"Toyota";
-    prius.modelName = @"Prius";
-    prius.modelYear = 2002;
-    prius.hasSunroof = YES;
-    prius.isConvertible = NO;
-    prius.isHatchback = YES;
-    prius.numberOfDoors = 4;
-    prius.powerSource = @"hybrid engine";
+    Car *prius = [Car carWithBrandName:@"Toyota" modelName:@"Prius" modelYear:2007
+                           powerSource:@"hybrid engine" numberOfDoors:5 convertible:YES hatchback:YES sunroof:YES];
     
     //Add it to the array.
     [self.vehicles addObject:prius];
     
-    //Create a motorcycle
-    Motorcycle *harley = [[Motorcycle alloc] init];
-    harley.brandName = @"Harley-Davidson";
-    harley.modelName = @"Softail";
-    harley.modelYear = 1979;
-    harley.engineNoise = @"Vrrrrrroooooommm";
+    //Add a motorcycle
+    Motorcycle *harley = [Motorcycle motorcycleWithBrandName:@"Harley-Davidson"
+                                                   modelName:@"Softail" modelYear:1979 engineNoise:@"Vrrrrrrrroooooooooom!"];
     
-    //Add it to the array
+    //Add it to the array.
     [self.vehicles addObject:harley];
     
-    //Create another motorcyle
-    Motorcycle *kawasaki = [[Motorcycle alloc] init];
-    kawasaki.brandName = @"Kawasaki";
-    kawasaki.modelName = @"Ninja";
-    kawasaki.modelYear = 2005;
-    kawasaki.engineNoise = @"Neeeeeeeeeeeeeeeeoow";
+    //Add another motorcycle
+    Motorcycle *kawasaki = [Motorcycle motorcycleWithBrandName:@"Kawasaki"
+                                                     modelName:@"Ninja" modelYear:2005 engineNoise:@"Neeeeeeeeeeeeeeeeow!"];
     
     //Add it to the array
     [self.vehicles addObject:kawasaki];
     
     //Create a truck
-    Truck *silverado = [[Truck alloc] init];
-    silverado.brandName = @"Chevrolet";
-    silverado.modelName = @"Silverado";
-    silverado.modelYear = 2011;
-    silverado.numberOfWheels = 4;
-    silverado.cargoCapacityCubicFeet = 53;
-    silverado.powerSource = @"gas engine";
+    Truck *silverado = [Truck truckWithBrandName:@"Chevrolet" modelName:@"Silverado"
+                                       modelYear:2011 powerSource:@"gas engine" wheels:4 cargoCapacityCubicFeet:53];
     
-    //Add it to the array
     [self.vehicles addObject:silverado];
     
     //Create another truck
-    Truck *eighteenWheeler = [[Truck alloc] init];
-    eighteenWheeler.brandName = @"Peterbilt";
-    eighteenWheeler.modelName = @"579";
-    eighteenWheeler.modelYear = 2013;
-    eighteenWheeler.numberOfWheels = 18;
-    eighteenWheeler.cargoCapacityCubicFeet = 408;
-    eighteenWheeler.powerSource = @"diesel engine";
+    Truck *eighteenWheeler = [Truck truckWithBrandName:@"Peterbilt" modelName:@"579"
+                                             modelYear:2013 powerSource:@"diesel engine" wheels:18 cargoCapacityCubicFeet:408];
     
-    //Add it to the array
     [self.vehicles addObject:eighteenWheeler];
     
     //Sort the array by the model year

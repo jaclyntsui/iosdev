@@ -63,4 +63,22 @@
     
     return [basicDetailsString copy];
 }
+
+
+#pragma mark - Factory method
++ (instancetype)vehicleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels;
+{
+    //Use self in the superclass to ensure you're getting the proper return type for each of the subclasses.
+    Vehicle *newVehicle = [[self alloc] init];
+    
+    //Set the provided values to the appropriate instance variables.
+    newVehicle.brandName = brandName;
+    newVehicle.modelName = modelName;
+    newVehicle.modelYear = modelYear;
+    newVehicle.powerSource = powerSource;
+    newVehicle.numberOfWheels = numberOfWheels;
+    
+    //Return the newly created instance.
+    return newVehicle;
+}
 @end

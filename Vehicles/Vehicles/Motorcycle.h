@@ -10,6 +10,9 @@
 
 @interface Motorcycle : Vehicle
 
+//Factory Method
++(Motorcycle *)motorcycleWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear engineNoise:(NSString *)engineNoise;
+
 @property (nonatomic, strong) NSString *engineNoise;
 
 @end

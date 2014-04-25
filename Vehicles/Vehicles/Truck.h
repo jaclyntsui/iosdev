@@ -10,6 +10,9 @@
 
 @interface Truck : Vehicle
 
+//Factory Method
++(Truck *)truckWithBrandName:(NSString *)brandName modelName:(NSString *)modelName modelYear:(NSInteger)modelYear powerSource:(NSString *)powerSource wheels:(NSInteger)numberOfWheels cargoCapacityCubicFeet:(NSInteger)cargoCapacityCubicFeet;
+
 @property (nonatomic, assign) NSInteger cargoCapacityCubicFeet;
 
 @end
