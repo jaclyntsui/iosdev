@@ -67,7 +67,11 @@
 
 -(IBAction)turn
 {
-    //TODO: Fill this in.
+    UIAlertView *turnEntryAlertView = [[UIAlertView alloc] initWithTitle:@"Turn" message:@"Enter number of degrees to turn:" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go!", nil];
+    turnEntryAlertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [[turnEntryAlertView textFieldAtIndex:0] setKeyboardType:UIKeyboardTypeNumberPad];
+    [turnEntryAlertView show];
+    
 }
 
 -(IBAction)goForward

@@ -11,7 +11,8 @@
 //Forward declaration of a class to be imported in the .m file
 @class Vehicle;
 
-@interface VehicleDetailViewController : UIViewController
+//This is a VehicleDetailViewController, which is a subclass of UIViewController and conforms to the UIAlertViewDelegate protocol 
+@interface VehicleDetailViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) Vehicle *detailVehicle;
 
