@@ -20,7 +20,7 @@
     }else {
         [backwardString appendFormat:@"%@ Depress gas pedal.", [self changeGears:@"Reverse"]];
     }
-    return backwardString
+    return backwardString;
 }
 
 - (NSString *)goForward
@@ -37,6 +37,17 @@
 - (NSString *)soundBackupAlarm
 {
     return @"Beep! Beep! Beep!";
+}
+
+- (NSString *)makeNoise
+{
+    if (self.numberOfWheels <= 4){
+        return @"Beep beep!";
+    } else if (self.numberOfWheels > 4 && self.numberOfWheels <=8){
+        return @"Honk!";
+    }else{
+        return @"HOOOONNNNK!";
+    }
 }
 
 @end
