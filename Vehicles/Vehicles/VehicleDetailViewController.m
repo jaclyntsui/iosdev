@@ -7,8 +7,9 @@
 //
 
 #import "VehicleDetailViewController.h"
-
 #import "Vehicle.h"
+#import "UIAlertView+Convenience.h"
+
 
 @interface VehicleDetailViewController ()
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
@@ -71,23 +72,23 @@
 
 -(IBAction)goForward
 {
-    //TODO: Fill this in.
+    [UIAlertView showSimpleAlertWithTitle:@"Go Forward" andMessage:[self.detailVehicle goForward]];
 }
 
 -(IBAction)goBackward
 {
-    //TODO: Fill this in.
+    [UIAlertView showSimpleAlertWithTitle:@"Go Backward" andMessage:[self.detailVehicle goBackward]];
 }
 
 -(IBAction)stopMoving
 {
-    //TODO: Fill this in.
+    [UIAlertView showSimpleAlertWithTitle:@"Stop Moving" andMessage:[self.detailVehicle stopMoving]];
 }
 
 
 -(IBAction)makeNoise
 {
-    //TODO: Fill this in.
+    [UIAlertView showSimpleAlertWithTitle:@"Make some noise!" andMessage:[self.detailVehicle makeNoise]];
 }
 
 @end
