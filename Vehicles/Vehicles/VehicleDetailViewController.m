@@ -95,4 +95,20 @@
     [UIAlertView showSimpleAlertWithTitle:@"Make some noise!" andMessage:[self.detailVehicle makeNoise]];
 }
 
+#pragma mark - UIAlertViewDelegate method
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != alertView.cancelButtonIndex){
+        //Get the text the user input in the text field
+        NSString *degrees = [[alertView textFieldAtIndex:0] text];
+        
+        //Convert it from a string to an integer
+        NSInteger degreesInt = [degrees integerValue];
+        
+        //Use the simple alert view to display the info for turning
+        [UIAlertView showSimpleAlertWithTitle:@"Turn" andMessage:[self.detailVehicle turn:degreesInt]];
+        
+    } //else the user has cancelled and we don't need to do anything
+}
+
 @end
