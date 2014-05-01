@@ -23,6 +23,7 @@
 		DB9AD762190B259000AF38A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB9AD760190B259000AF38A7 /* InfoPlist.strings */; };
 		DB9AD764190B259000AF38A7 /* ScaryBugsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AD763190B259000AF38A7 /* ScaryBugsTests.m */; };
 		DB9AD771190B266A00AF38A7 /* RWTScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AD770190B266A00AF38A7 /* RWTScaryBugData.m */; };
+		DBA160DC1913086000B8B63A /* RWTScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA160DB1913086000B8B63A /* RWTScaryBugDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		DB9AD763190B259000AF38A7 /* ScaryBugsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugsTests.m; sourceTree = "<group>"; };
 		DB9AD76F190B266A00AF38A7 /* RWTScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTScaryBugData.h; sourceTree = "<group>"; };
 		DB9AD770190B266A00AF38A7 /* RWTScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTScaryBugData.m; sourceTree = "<group>"; };
+		DBA160DA1913086000B8B63A /* RWTScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTScaryBugDoc.h; sourceTree = "<group>"; };
+		DBA160DB1913086000B8B63A /* RWTScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTScaryBugDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		DB9AD729190B259000AF38A7 = {
 			isa = PBXGroup;
 			children = (
+				DBA160DA1913086000B8B63A /* RWTScaryBugDoc.h */,
+				DBA160DB1913086000B8B63A /* RWTScaryBugDoc.m */,
 				DB9AD76E190B261800AF38A7 /* Model */,
 				DB9AD76D190B25ED00AF38A7 /* GUI */,
 				DB9AD73B190B259000AF38A7 /* ScaryBugs */,
@@ -277,6 +282,7 @@
 			files = (
 				DB9AD771190B266A00AF38A7 /* RWTScaryBugData.m in Sources */,
 				DB9AD746190B259000AF38A7 /* RWTAppDelegate.m in Sources */,
+				DBA160DC1913086000B8B63A /* RWTScaryBugDoc.m in Sources */,
 				DB9AD742190B259000AF38A7 /* main.m in Sources */,
 				DB9AD74C190B259000AF38A7 /* RWTMasterViewController.m in Sources */,
 				DB9AD74F190B259000AF38A7 /* RWTDetailViewController.m in Sources */,
@@ -485,6 +491,7 @@
 				DB9AD769190B259000AF38A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB9AD76A190B259000AF38A7 /* Build configuration list for PBXNativeTarget "ScaryBugsTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +500,7 @@
 				DB9AD76C190B259000AF38A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

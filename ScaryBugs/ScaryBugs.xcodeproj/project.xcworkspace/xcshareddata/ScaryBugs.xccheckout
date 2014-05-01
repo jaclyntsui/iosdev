@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>325AF177-AEDD-43CF-888A-7C8878B2B1F9</string>
+	<string>8757C757-F26B-4981-826E-21A17B210CE3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Tappity_tap</string>
+	<string>ScaryBugs</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>450ED38F-9C93-43AB-9C65-900E453C3D80</key>
+		<key>6C541574-7627-4F36-814F-2F2275D8B3E5</key>
 		<string>ssh://github.com/jaclyntsui/iosdev.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tappity_tap/Tappity_tap.xcodeproj/project.xcworkspace</string>
+	<string>ScaryBugs/ScaryBugs.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>450ED38F-9C93-43AB-9C65-900E453C3D80</key>
+		<key>6C541574-7627-4F36-814F-2F2275D8B3E5</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>450ED38F-9C93-43AB-9C65-900E453C3D80</string>
+	<string>6C541574-7627-4F36-814F-2F2275D8B3E5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>450ED38F-9C93-43AB-9C65-900E453C3D80</string>
+			<string>6C541574-7627-4F36-814F-2F2275D8B3E5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>My First Project</string>
 		</dict>
