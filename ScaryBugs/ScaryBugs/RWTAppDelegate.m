@@ -6,12 +6,15 @@
 //
 //
 
-#import "RWTAppDelegate.h"
+#import "RWTMasterViewController.h"
+#import "RWTScaryBugDoc.h"
 
 @implementation RWTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    RWTScaryBugDoc *bug1 = [[RWTScaryBugDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed: @"potatoBugThumb.jpg"] fullImage:[UIImage imageNamed:@"potatoBug.jpg"]];
+    
     // Override point for customization after application launch.
     return YES;
 }

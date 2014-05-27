@@ -10,4 +10,7 @@
 
 @interface RWTMasterViewController : UITableViewController
 
+//instance variable/property to keep track of list of bugs
+@property (strong) NSMutableArray *bugs;
+
 @end

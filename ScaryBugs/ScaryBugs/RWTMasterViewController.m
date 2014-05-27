@@ -7,8 +7,9 @@
 //
 
 #import "RWTMasterViewController.h"
-
 #import "RWTDetailViewController.h"
+#import "RWTScaryBugDoc.h"
+#import "RWTScaryBugData.h"
 
 @interface RWTMasterViewController () {
     NSMutableArray *_objects;
@@ -16,6 +17,7 @@
 @end
 
 @implementation RWTMasterViewController
+@synthesize bugs = _bugs;
 
 - (void)awakeFromNib
 {
@@ -30,7 +32,9 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.title = @"Scary Bugs";
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -57,15 +61,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return _bugs.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView
+                             dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    RWTScaryBugDoc *bug = [self.bugs objectAtIndex:indexPath.row];
+    cell.textLabel.text = bug.data.title;
+    cell.imageView.image = bug.thumbImage;
     return cell;
 }
 
