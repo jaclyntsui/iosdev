@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		DB50974219356B830074209D /* RWTRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50974119356B830074209D /* RWTRateView.m */; };
 		DB50974619356BB80074209D /* RWTUIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50974519356BB80074209D /* RWTUIImageExtras.m */; };
+		DB50974B19356C150074209D /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50974819356C150074209D /* shockedface2_empty.png */; };
+		DB50974C19356C150074209D /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50974919356C150074209D /* shockedface2_full.png */; };
+		DB50974D19356C150074209D /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50974A19356C150074209D /* shockedface2_half.png */; };
+		DB50974F19356C360074209D /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50974E19356C360074209D /* logo1.png */; };
 		DB7216B61934501800F966F6 /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216AE1934501800F966F6 /* centipede.jpg */; };
 		DB7216B71934501800F966F6 /* centipedeThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216AF1934501800F966F6 /* centipedeThumb.jpg */; };
 		DB7216B81934501800F966F6 /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216B01934501800F966F6 /* ladybug.jpg */; };
@@ -51,6 +55,10 @@
 		DB50974119356B830074209D /* RWTRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRateView.m; sourceTree = "<group>"; };
 		DB50974419356BB80074209D /* RWTUIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTUIImageExtras.h; sourceTree = "<group>"; };
 		DB50974519356BB80074209D /* RWTUIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTUIImageExtras.m; sourceTree = "<group>"; };
+		DB50974819356C150074209D /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		DB50974919356C150074209D /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		DB50974A19356C150074209D /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		DB50974E19356C360074209D /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
 		DB7216AE1934501800F966F6 /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = centipede.jpg; path = ../centipede.jpg; sourceTree = "<group>"; };
 		DB7216AF1934501800F966F6 /* centipedeThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = centipedeThumb.jpg; path = ../centipedeThumb.jpg; sourceTree = "<group>"; };
 		DB7216B01934501800F966F6 /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ladybug.jpg; path = ../ladybug.jpg; sourceTree = "<group>"; };
@@ -128,9 +136,21 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		DB50974719356C060074209D /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				DB50974E19356C360074209D /* logo1.png */,
+				DB50974819356C150074209D /* shockedface2_empty.png */,
+				DB50974919356C150074209D /* shockedface2_full.png */,
+				DB50974A19356C150074209D /* shockedface2_half.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
 		DB9AD729190B259000AF38A7 = {
 			isa = PBXGroup;
 			children = (
+				DB50974719356C060074209D /* Art */,
 				DB50974319356B980074209D /* Helpers */,
 				DB50973F19356B590074209D /* Views */,
 				DB9AD76E190B261800AF38A7 /* Model */,
@@ -310,15 +330,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9AD751190B259000AF38A7 /* Images.xcassets in Resources */,
+				DB50974B19356C150074209D /* shockedface2_empty.png in Resources */,
 				DB7216BA1934501800F966F6 /* potatoBug.jpg in Resources */,
 				DB7216BC1934501800F966F6 /* wolfSpider.jpg in Resources */,
 				DB7216BD1934501800F966F6 /* wolfSpiderThumb.jpg in Resources */,
 				DB7216B91934501800F966F6 /* ladybugThumb.jpg in Resources */,
 				DB7216B61934501800F966F6 /* centipede.jpg in Resources */,
 				DB7216B71934501800F966F6 /* centipedeThumb.jpg in Resources */,
+				DB50974C19356C150074209D /* shockedface2_full.png in Resources */,
 				DB9AD740190B259000AF38A7 /* InfoPlist.strings in Resources */,
 				DB7216BB1934501800F966F6 /* potatoBugThumb.jpg in Resources */,
 				DB7216B81934501800F966F6 /* ladybug.jpg in Resources */,
+				DB50974D19356C150074209D /* shockedface2_half.png in Resources */,
+				DB50974F19356C360074209D /* logo1.png in Resources */,
 				DB9AD749190B259000AF38A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
