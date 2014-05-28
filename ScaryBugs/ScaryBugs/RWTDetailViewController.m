@@ -11,13 +11,13 @@
 #import "RWTScaryBugData.h"
 #import "RWTUIImageExtras.h"
 
-@synthesize picker = _picker;
-
 @interface RWTDetailViewController ()
 - (void)configureView;
 @end
 
 @implementation RWTDetailViewController
+
+@synthesize picker = _picker;
 
 #pragma mark - Managing the detail item
 
@@ -34,9 +34,17 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    self.rateView.notSelectedImage = [UIImage imageNamed:@"shockedface2_empty.png"];
+    self.rateView.halfSelectedImage = [UIImage imageNamed:@"shockedface2_half.png"];
+    self.rateView.fullSelectedImage = [UIImage imageNamed:@"shockedface2_full.png"];
+    self.rateView.editable = YES;
+    self.rateView.maxRating = 5;
+    self.rateView.delegate = self;
+    
+    if (self.detailItem){
+        self.titleField.text = self.detailItem.data.title;
+        self.rateView.rating = self.detailItem.data.rating;
+        self.imageView.image = self.detailItem.fullImage;
     }
 }
 
