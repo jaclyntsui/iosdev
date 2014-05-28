@@ -7,6 +7,11 @@
 //
 
 #import "RWTDetailViewController.h"
+#import "RWTScaryBugDoc.h"
+#import "RWTScaryBugData.h"
+#import "RWTUIImageExtras.h"
+
+@synthesize picker = _picker;
 
 @interface RWTDetailViewController ()
 - (void)configureView;
@@ -49,5 +54,8 @@
 }
 
 - (IBAction)addPictureTapped:(id)sender {
+}
+
+- (IBAction)titleFieldTextChanged:(id)sender {
 }
 @end
