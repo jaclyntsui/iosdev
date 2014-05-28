@@ -48,6 +48,10 @@
     }
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation {
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
