@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB50974219356B830074209D /* RWTRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50974119356B830074209D /* RWTRateView.m */; };
+		DB50974619356BB80074209D /* RWTUIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50974519356BB80074209D /* RWTUIImageExtras.m */; };
 		DB7216B61934501800F966F6 /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216AE1934501800F966F6 /* centipede.jpg */; };
 		DB7216B71934501800F966F6 /* centipedeThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216AF1934501800F966F6 /* centipedeThumb.jpg */; };
 		DB7216B81934501800F966F6 /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB7216B01934501800F966F6 /* ladybug.jpg */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB50974019356B830074209D /* RWTRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRateView.h; sourceTree = "<group>"; };
+		DB50974119356B830074209D /* RWTRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRateView.m; sourceTree = "<group>"; };
+		DB50974419356BB80074209D /* RWTUIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTUIImageExtras.h; sourceTree = "<group>"; };
+		DB50974519356BB80074209D /* RWTUIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTUIImageExtras.m; sourceTree = "<group>"; };
 		DB7216AE1934501800F966F6 /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = centipede.jpg; path = ../centipede.jpg; sourceTree = "<group>"; };
 		DB7216AF1934501800F966F6 /* centipedeThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = centipedeThumb.jpg; path = ../centipedeThumb.jpg; sourceTree = "<group>"; };
 		DB7216B01934501800F966F6 /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ladybug.jpg; path = ../ladybug.jpg; sourceTree = "<group>"; };
@@ -104,9 +110,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB50973F19356B590074209D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB50974019356B830074209D /* RWTRateView.h */,
+				DB50974119356B830074209D /* RWTRateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DB50974319356B980074209D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB50974419356BB80074209D /* RWTUIImageExtras.h */,
+				DB50974519356BB80074209D /* RWTUIImageExtras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		DB9AD729190B259000AF38A7 = {
 			isa = PBXGroup;
 			children = (
+				DB50974319356B980074209D /* Helpers */,
+				DB50973F19356B590074209D /* Views */,
 				DB9AD76E190B261800AF38A7 /* Model */,
 				DB9AD76D190B25ED00AF38A7 /* GUI */,
 				DB9AD73B190B259000AF38A7 /* ScaryBugs */,
@@ -313,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9AD771190B266A00AF38A7 /* RWTScaryBugData.m in Sources */,
+				DB50974219356B830074209D /* RWTRateView.m in Sources */,
+				DB50974619356BB80074209D /* RWTUIImageExtras.m in Sources */,
 				DB9AD746190B259000AF38A7 /* RWTAppDelegate.m in Sources */,
 				DBA160DC1913086000B8B63A /* RWTScaryBugDoc.m in Sources */,
 				DB9AD742190B259000AF38A7 /* main.m in Sources */,
