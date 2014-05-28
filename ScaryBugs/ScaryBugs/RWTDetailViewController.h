@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RWTRateView.h"
 
 @interface RWTDetailViewController : UIViewController
 
@@ -15,5 +16,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
+@property (weak, nonatomic) IBOutlet UIButton *imageView;
+
+@property (weak, nonatomic) IBOutlet RWTRateView *rateView;
+- (IBAction)addPictureTapped:(id)sender;
+
+
 
 @end
