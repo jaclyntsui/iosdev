@@ -41,7 +41,7 @@
     self.rateView.maxRating = 5;
     self.rateView.delegate = self;
     
-    if (self.detailItem){
+    if (self.detailItem) {
         self.titleField.text = self.detailItem.data.title;
         self.rateView.rating = self.detailItem.data.rating;
         self.imageView.image = self.detailItem.fullImage;
@@ -50,6 +50,26 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation {
     return YES;
+}
+
+//Called whenever the user changes the value of the text field = update model
+- (IBAction)titleFieldTextChanged:(id)sender {
+    self.detailItem.data.title = self.titleField.text;
+}
+
+#pragma mark UITextFieldDelegate
+
+//called when the user hits the return key on the keyboard = keyboard to disappear off the screen
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark RWTRateViewDelegate
+
+//called when the user chooses a new rating = update model
+- (void)rateView:(RWTRateView *)rateView ratingDidChange:(float)rating {
+    self.detailItem.data.rating = rating;
 }
 
 - (void)viewDidLoad
